@@ -1,7 +1,7 @@
 /**
  * External dependencies
  */
-import { useMemo, useEffect, useState } from '@wordpress/element';
+import { useMemo, useEffect } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
 import {
 	AddressForm,
@@ -122,6 +122,8 @@ const Checkout = ( { attributes, scrollToTop } ) => {
 		onSubmit,
 		orderNotes,
 		dispatchActions,
+		createAccount,
+		setCreateAccount,
 	} = useCheckoutContext();
 	const { setOrderNotes } = dispatchActions;
 	const {
@@ -160,9 +162,6 @@ const Checkout = ( { attributes, scrollToTop } ) => {
 			},
 		};
 	}, [ defaultAddressFields, attributes ] );
-
-	// Temporary :) - this will move to appropriate context.
-	const [ createAccount, setCreateAccount ] = useState( false );
 
 	const hasErrorsToDisplay =
 		checkoutIsIdle &&

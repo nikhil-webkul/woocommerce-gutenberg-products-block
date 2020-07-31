@@ -245,7 +245,7 @@
  *                                                                     order if one exists.
  * @property {boolean}                      hasOrder                   True when the checkout has a
  *                                                                     draft order from the API.
- * @property {string}                       notice                     Notice associated to the
+ * @property {string}                       notices                    Notices associated to the
  *                                                                     current checkout data.
  * @property {boolean}                      isCart                     When true, means the provider
  *                                                                     is providing data for the cart.

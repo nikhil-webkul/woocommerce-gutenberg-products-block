@@ -34,6 +34,15 @@
 				width: calc(1rem - 2px);
 			}
 		}
+
+		.has-dark-styles & {
+			border-color: $controls-border-dark;
+
+			&:checked {
+				background: transparent;
+				border-color: $controls-border-dark;
+			}
+		}
 	}
 
 	.wc-block-components-checkbox__input[type="checkbox"] + .wc-block-components-checkbox__label {

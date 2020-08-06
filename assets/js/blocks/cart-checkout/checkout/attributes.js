@@ -1,3 +1,8 @@
+/**
+ * External dependencies
+ */
+import { CHECKOUT_ALLOWS_SIGNUP } from '@woocommerce/block-settings';
+
 const blockAttributes = {
 	isPreview: {
 		type: 'boolean',
@@ -14,7 +19,7 @@ const blockAttributes = {
 	},
 	allowCreateAccount: {
 		type: 'boolean',
-		default: false,
+		default: CHECKOUT_ALLOWS_SIGNUP,
 	},
 	showApartmentField: {
 		type: 'boolean',
